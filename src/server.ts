@@ -46,3 +46,7 @@ app.use(routes);
 app.listen(process.env.PORT || 4000, () => {
   console.log("Servidor rodando");
 });
+
+app.get('/', (req, res) => {
+    res.send('API do CRM está online e rodando com sucesso!');
+});
